@@ -1,0 +1,43 @@
+.sidebar {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background-color: #191718;
+}
+@media screen and (max-width: 1750px) {
+  .sidebar {
+    display: none;
+  }
+  .sidebar-open {
+    display: flex;
+    z-index: 999;
+    top: 50px;
+    height: auto;
+    width: 100%;
+  }
+  .sidebar-menu {
+    width: 100%;
+  }
+}
+.sidebar-menu {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+  font-weight: 700;
+  color: #aaaaaa;
+  /* width: 100%; */
+  height: 44px;
+  border-bottom: 0.5px solid #5c5c5c;
+  cursor: default;
+}
+.sidebar-menu-active {
+  color: #ffffff !important;
+}
+.sidebar-menu:hover {
+  color: #ffffff !important;
+  background-color: #5c5c5c;
+}
